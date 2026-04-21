@@ -1,0 +1,17 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - heading "Groceries" [level=1] [ref=e7]
+        - paragraph [ref=e8]: 0 items left
+      - button "Share or join list" [ref=e9] [cursor=pointer]:
+        - img [ref=e10]
+        - text: 77JQWY
+    - list [ref=e15]
+    - generic [ref=e16]:
+      - textbox "Add item..." [ref=e17]
+      - button "Add item" [disabled] [ref=e18]: +
+    - generic [ref=e19]:
+      - button "Hold to speak" [ref=e20] [cursor=pointer]:
+        - img [ref=e21]
+      - paragraph [ref=e24]: Hold to speak

@@ -1,0 +1,23 @@
+- generic [ref=e2]:
+  - generic [ref=e26]: Offline — changes will sync when reconnected
+  - main [ref=e3]:
+    - generic [ref=e34]:
+      - button "← Back" [ref=e35] [cursor=pointer]
+      - heading "Share list" [level=1] [ref=e36]
+      - paragraph [ref=e37]: No account needed
+      - generic [ref=e38]:
+        - generic [ref=e39]: 77JQWY
+        - paragraph [ref=e40]: Share this code. Anyone with it can join.
+      - generic [ref=e42]: or join someone else's list
+      - paragraph [ref=e43]: Enter a 6-character code
+      - generic [ref=e44]:
+        - textbox [ref=e45]
+        - textbox [ref=e46]
+        - textbox [ref=e47]
+        - textbox [ref=e48]
+        - textbox [ref=e49]
+        - textbox [ref=e50]
+      - button "Join list →" [ref=e51] [cursor=pointer]
+      - paragraph [ref=e52]: No sign-up. Your data stays private.
+      - generic [ref=e54]: or start fresh
+      - button "Start a new list" [ref=e55] [cursor=pointer]

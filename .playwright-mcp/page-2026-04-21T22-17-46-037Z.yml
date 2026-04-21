@@ -1,0 +1,23 @@
+- generic [ref=e2]:
+  - generic [ref=e26]: Offline — changes will sync when reconnected
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - heading "Groceries" [level=1] [ref=e7]
+          - paragraph [ref=e8]: 1 item left
+        - button "Share or join list" [ref=e9] [cursor=pointer]:
+          - img [ref=e10]
+          - text: 77JQWY
+      - list [ref=e15]:
+        - listitem [ref=e27]:
+          - button "Mark as done" [ref=e28] [cursor=pointer]
+          - generic [ref=e29]: Pasta sauce
+          - button "Remove Pasta sauce" [ref=e30] [cursor=pointer]: ✕
+      - generic [ref=e16]:
+        - textbox "Add item..." [active] [ref=e17]
+        - button "Add item" [disabled] [ref=e18]: +
+      - generic [ref=e19]:
+        - button "Hold to speak" [ref=e20] [cursor=pointer]:
+          - img [ref=e21]
+        - paragraph [ref=e24]: Hold to speak

@@ -1,0 +1,2 @@
+{"ts":"2026-04-21T21:55:39.762Z","cmd":"goto","args":"file:///tmp/shopy-sketch.html","origin":"file:///tmp/shopy-sketch.html","durationMs":14,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-04-21T21:55:41.874Z","cmd":"screenshot","args":"/tmp/shopy-sketch.png","origin":"file:///tmp/shopy-sketch.html","durationMs":56,"status":"ok","hasCookies":false,"mode":"launched"}
