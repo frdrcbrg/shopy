@@ -77,8 +77,8 @@
 		recognition.onend = () => {
 			voiceActive = false;
 			if (voiceTranscript.trim()) {
-				const normalized = normalizeVoice(voiceTranscript);
-				if (normalized) store.addItem(normalized);
+				const items = normalizeVoice(voiceTranscript);
+				for (const item of items) store.addItem(item);
 			}
 			voiceTranscript = '';
 		};
