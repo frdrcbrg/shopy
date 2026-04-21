@@ -67,7 +67,7 @@
 		recognition = new SpeechRecognition();
 		recognition.continuous = false;
 		recognition.interimResults = true;
-		recognition.lang = 'en-US';
+		recognition.lang = navigator.language || 'en-US';
 
 		recognition.onresult = (event) => {
 			const last = event.results[event.results.length - 1];
