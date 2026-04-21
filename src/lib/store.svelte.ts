@@ -1,10 +1,13 @@
 import PartySocket from 'partysocket';
-import { nanoid } from 'nanoid';
+import { customAlphabet } from 'nanoid';
 import { parseMsg, type Item, type Msg } from './types';
+
+const roomId6 = customAlphabet('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', 6);
+const itemId = customAlphabet('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', 10);
 
 const STORAGE_KEY = 'shopy_items';
 const ROOM_KEY = 'shopy_room';
-const PARTYKIT_HOST = import.meta.env.VITE_PARTYKIT_HOST ?? 'shopy.d034644.partykit.dev';
+const PARTYKIT_HOST = import.meta.env.VITE_PARTYKIT_HOST ?? 'shopy.frdrcbrg.partykit.dev';
 
 function loadItems(): Item[] {
 	try {
@@ -18,7 +21,7 @@ function loadItems(): Item[] {
 function loadRoom(): string {
 	const stored = localStorage.getItem(ROOM_KEY);
 	if (stored) return stored;
-	const id = nanoid(6).toUpperCase();
+	const id = roomId6();
 	localStorage.setItem(ROOM_KEY, id);
 	return id;
 }
@@ -76,7 +79,7 @@ class ShopyStore {
 	}
 
 	newRoom() {
-		const id = nanoid(6).toUpperCase();
+		const id = roomId6();
 		localStorage.setItem(ROOM_KEY, id);
 		localStorage.removeItem(STORAGE_KEY);
 		this.roomId = id;
@@ -87,7 +90,7 @@ class ShopyStore {
 
 	addItem(text: string) {
 		const item: Item = {
-			id: nanoid(10),
+			id: itemId(),
 			text,
 			done: false,
 			updatedAt: Date.now(),

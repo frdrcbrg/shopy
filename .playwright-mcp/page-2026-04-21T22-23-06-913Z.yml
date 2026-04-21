@@ -1,0 +1,19 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - heading "Groceries" [level=1] [ref=e7]
+        - paragraph [ref=e8]:
+          - text: 0 items left
+          - generic "Syncing" [ref=e9]
+      - button "Share or join list" [ref=e10] [cursor=pointer]:
+        - img [ref=e11]
+        - text: CYS-KW
+    - list [ref=e16]
+    - generic [ref=e17]:
+      - textbox "Add item..." [ref=e18]
+      - button "Add item" [disabled] [ref=e19]: +
+    - generic [ref=e20]:
+      - button "Hold to speak" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - paragraph [ref=e25]: Hold to speak
